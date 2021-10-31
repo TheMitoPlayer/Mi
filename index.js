@@ -175,7 +175,7 @@ async function starts() {
 				if (!packname) packname = 'WABot'; if (!author) author = 'Bot';	
 				author = author.replace(/[^a-zA-Z0-9]/g, '');	
 				let name = `${author}_${packname}`
-				if (fs.existsSync(`./src/stickers/${name}.exif`)) return `./src/stickers/${name}.exif`
+				if (fs.existsSync(`./src/stickers/`)) return `./src/stickers/`
 				const json = {	
 					"sticker-pack-name": packname,
 					"sticker-pack-publisher": author,
